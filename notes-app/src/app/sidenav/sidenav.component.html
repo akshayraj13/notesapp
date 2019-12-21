@@ -1,0 +1,10 @@
+<mat-list>
+  <mat-list-item *ngFor="let note of notes" (click)="selectNote(note)">
+      <mat-icon matListIcon>assignment</mat-icon>
+      <h4 matLine>{{note.title}}</h4>
+      <p matLine>{{note.content}}</p>
+  </mat-list-item>
+</mat-list>
+
+
+
