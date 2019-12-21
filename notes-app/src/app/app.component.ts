@@ -30,7 +30,13 @@ export class AppComponent implements OnInit{
     localStorage.setItem('notes', JSON.stringify(this.notes));
   }
 
-  editNote(note: Note){
+  public editNote(note: Note){
     this.selectedNote = note;
+  }
+
+  public deleteNote(){
+    this.notes.splice(this.notes.indexOf(this.selectedNote),1);
+    this.saveNotes();
+    this.selectedNote = null;
   }
 }
