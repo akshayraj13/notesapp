@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
-import {MatSidenavModule, MatToolbarModule} from '@angular/material';
+import {MatInputModule, MatSidenavModule, MatToolbarModule} from '@angular/material';
 import {SidenavModule} from './sidenav/sidenav.module';
 import {EditorModule} from './editor/editor.module';
 import {CommonModule} from '@angular/common';
@@ -23,6 +23,7 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
     NoopAnimationsModule,
     MatSidenavModule,
     MatToolbarModule,
+    MatInputModule,
     SidenavModule,
     EditorModule,
   ],

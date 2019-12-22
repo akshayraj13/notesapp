@@ -9,6 +9,8 @@ import {Note} from './models/note.model';
 export class AppComponent implements OnInit{
   notes: Note[];
   selectedNote: Note;
+  searchText: string;
+  notesPrototype: Note[];
   ngOnInit(): void {
     this.getNotes();
   }
@@ -19,6 +21,7 @@ export class AppComponent implements OnInit{
       this.notes =  new Array<Note>();
     } else {
       this.notes = JSON.parse(localStorage.getItem('notes'));
+      this.notesPrototype = JSON.parse(localStorage.getItem('notes'));
     }
   }
   public addNote() {
@@ -38,5 +41,12 @@ export class AppComponent implements OnInit{
     this.notes.splice(this.notes.indexOf(this.selectedNote),1);
     this.saveNotes();
     this.selectedNote = null;
+  }
+  public searchNotes(data: string){
+    if(data.trim().length > 0){
+      this.notes = this.notesPrototype.filter(note => note.title.includes(data) || note.content.includes(data));
+    }else{
+      this.getNotes();
+    }
   }
 }

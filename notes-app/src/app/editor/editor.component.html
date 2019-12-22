@@ -1,4 +1,14 @@
-<div *ngIf="note">
-  <input matInput placeholder="Title" [(ngModel)]="note.title">
-  <textarea matInput [(ngModel)]="note.content" ></textarea>
+<div *ngIf="note" class="example-form">
+    <mat-form-field class="example-full-width">
+      <input matInput placeholder="Title" [(ngModel)]="note.title">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <textarea matInput [(ngModel)]="note.content"></textarea>
+    </mat-form-field>
+<!--  <input matInput placeholder="Title" [(ngModel)]="note.title">-->
+<!--  <textarea matInput [(ngModel)]="note.content" ></textarea>-->
 </div>
+
+
+
