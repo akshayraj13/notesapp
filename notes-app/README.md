@@ -1,5 +1,5 @@
 # NotesApp
-This is an angular web application to manahe yout important notes.
+This is an angular web application to manage yout important notes.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
 
