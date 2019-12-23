@@ -10,6 +10,7 @@
 }
 span {
   margin: 7px;
+  cursor: pointer;
 }
 
 
@@ -26,6 +27,9 @@ span {
   bottom: 5px;
 }
 
+mat-icon:hover {
+  background-color: rgba(125, 128, 88, 0.34);
+}
 
 /*.topnav .search-container button {*/
   /*float: right;*/

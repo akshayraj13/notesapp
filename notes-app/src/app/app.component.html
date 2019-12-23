@@ -1,13 +1,13 @@
 <mat-toolbar>Notes App
 
   <div class="example-button-row">
-    <span mat-icon-button (click)="addNote()">
+    <span matTooltip="Add notes" mat-icon-button (click)="addNote()">
       <mat-icon>note_add</mat-icon>
     </span>
-    <span mat-icon-button color="accent" (click)="saveNotes()">
+    <span matTooltip="Save notes" mat-icon-button color="accent" (click)="saveNotes()">
       <mat-icon>save</mat-icon>
     </span>
-    <span mat-icon-button color="primary" (click)="deleteNote()">
+    <span matTooltip="Delete Note" mat-icon-button color="primary" (click)="deleteNote()">
       <mat-icon>delete</mat-icon>
     </span>
   </div>
